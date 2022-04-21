@@ -12,7 +12,7 @@ bot = webdriver.Chrome(executable_path="assets/chromedriver")
 bot.get(url)
 
 f = open("assets/links.csv", "a", encoding="utf-8")
-f.write('user_name, user_page, vid_title, vid_link \n')
+f.write('user_name,user_page,vid_title,vid_link\n')
 start = datetime.datetime.now()
 time_limit = 120
 texts = []
@@ -33,7 +33,7 @@ while count != 0:
             vid_title = vid.find('div', {'class':'Z6bzLUc0 UETFf9cv'}).img['alt'].strip()
             vid_link = vid.find("div", {'class':'xv7dvZKu'}).a['href'].strip()
             
-            record = '%s, %s, %s, %s \n' % (user_name, user_page, vid_title, vid_link)
+            record = '%s,%s,%s,%s\n' % (user_name, user_page, vid_title, vid_link)
             if (vid_title not in texts):
                 f.write(record)
             texts.append(vid_title)

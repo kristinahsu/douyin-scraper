@@ -17,8 +17,8 @@ import re
 #from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 
-url = 'https://www.douyin.com/video/7008807248432614693?modeFrom=userPost&secUid=MS4wLjABAAAA41IBn7lM0-2gLd2kWlyc4fhZAZ_pbakaFwlgNDOPErRS-YIqWUHlbDojXJj8L0Gb'
-#'https://www.douyin.com/video/7014499168886508838'
+#url = 'https://www.douyin.com/video/7008807248432614693?modeFrom=userPost&secUid=MS4wLjABAAAA41IBn7lM0-2gLd2kWlyc4fhZAZ_pbakaFwlgNDOPErRS-YIqWUHlbDojXJj8L0Gb'
+url = "https://www.douyin.com/video/6971364659605622027"
 
 bot = webdriver.Chrome(executable_path="assets/chromedriver")
 bot.get(url)
