@@ -31,7 +31,7 @@ f = open("assets/comments.csv", "a", encoding="utf-8")
 f.write('vid_idx,date,user_name,likes,comment')
 
 bot = webdriver.Chrome(executable_path="assets/chromedriver")
-for i in range(1): #len(df)):
+for i in range(len(df)):
     time.sleep(5)
     bot.get('https:' + df['vid_link'][i])
 
